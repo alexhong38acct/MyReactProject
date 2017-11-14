@@ -19,6 +19,7 @@ import sampleProducts from './sample-products.js';
 
 //  includes
 import './assets/css/default.min.css';
+import './assets/css/slick.min.css';
 
 
 
@@ -38,7 +39,6 @@ class App extends Component {
       <div className="App">
         <Header />
 
-        <Home />
 
         <SimpleSlider />
 

@@ -4,10 +4,12 @@
 
 header {
 	width: calc(100% - 40px);
-	background: $black;
+    background: rgba(0,0,0,0.7);
+    display: -ms-flexbox;
     display: flex;
     padding: 20px;
-	position: relative;
+    position: absolute;
+    z-index: 1;
 	
 	.logo {
 		width: 200px;

@@ -12,16 +12,14 @@ class SimpleSlider extends Component {
       slidesToScroll: 1
     };
     return (
-      <div>
-        <h2> Single Item</h2>
-        <Slider {...settings}>
-          <div><h3>1</h3></div>
-          <div><h3>2</h3></div>
-          <div><h3>3</h3></div>
-          <div><h3>4</h3></div>
-          <div><h3>5</h3></div>
-          <div><h3>6</h3></div>
-        </Slider>
+      <div className="slick_Wrapper">
+      	<div className="slick_Container">
+	        <Slider {...settings}>
+	          <div><div className="imgs img1">1</div></div>
+	          <div><div className="imgs img2">2</div></div>
+	          <div><div className="imgs img3">3</div></div>
+	        </Slider>
+	       </div>
       </div>
     );
   }

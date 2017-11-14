@@ -1,0 +1,36 @@
+@import "_config.scss";
+
+.slick_Wrapper {
+	width: 100%;
+	height: 100vh;
+	
+	.slick_Container {
+	
+		.img1,
+		.img2,
+		.img3 {
+			width: 100%;
+			height: 100vh;
+			color: $red;
+			font-size: 50px;
+			-webkit-background-size: cover; 
+			   -o-background-size: cover; 
+			   background-size: cover; 
+			text-align: center;
+			padding-top: 200px;
+		}
+		.img1 {
+			background: url(../img1.jpg) no-repeat;
+		}
+		.img2 {
+			background: url(../img2.jpg) no-repeat;
+		}
+		.img3 {
+			background: url(../img3.jpg) no-repeat;
+		}		
+	}
+
+}
+
+
+
