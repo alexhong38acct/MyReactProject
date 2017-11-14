@@ -10,10 +10,9 @@ $red: #ff1755;
 
 body {
 	font-family: 'Raleway', sans-serif;
-	font-size: 10px;
 	color: $black;
-	font-weight: 400;
-	font-style: normal;   
+	margin: 0;
+	padding: 0;   
 }
 
 
@@ -46,3 +45,6 @@ a {
 		@include transition(.4s ease-in-out); 
 	} 
 }
+
+
+

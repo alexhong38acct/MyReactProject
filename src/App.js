@@ -6,26 +6,50 @@ import {
 } from 'react-router-dom';
 
 //  components
-import Header from './components/headerComponent/header';
-import Footer from './components/footerComponent/footer';
-import Homepage from './components/pages/homePage';
-import Products from './components/pages/products';
-import Contact from './components/pages/contact';
+import Header from './components/Header';
+import Home from './components/Home';
+import Product from './components/Product';
+import Products from './components/Products';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+
+import sampleProducts from './sample-products.js';
 
 //  includes
-import './Assets/css/default.min.css'
+import './assets/css/default.min.css'
+
+
 
 class App extends Component {
+  constructor() {
+    super();
+
+    //  getinitialState
+    this.state = {
+      product: {...sampleProducts}
+    };
+  }
+
   render() {
     return (
       <Router>
       <div className="App">
         <Header />
 
-          <Route exact path='/' component={Homepage} />
+        <Home />
+
+        {
+          Object
+            .keys(this.state.product)
+            .map(key => <Product key={key} details={this.state.product[key] }/>)
+        }
+
+        <Contact />
+        {/*
+          <Route exact path='/' component={Home} />
           <Route exact path='/Products' component={Products} />
           <Route exact path='/Contact' component={Contact} />
-
+        */}
         <Footer />
       </div>
       </Router>
