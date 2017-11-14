@@ -8,6 +8,8 @@ import {
 //  components
 import Header from './components/Header';
 import Home from './components/Home';
+import SimpleSlider from './components/SimpleSlider';
+
 import Product from './components/Product';
 import Products from './components/Products';
 import Contact from './components/Contact';
@@ -17,8 +19,6 @@ import sampleProducts from './sample-products.js';
 
 //  includes
 import './assets/css/default.min.css';
-
-
 
 
 
@@ -40,7 +40,9 @@ class App extends Component {
 
         <Home />
 
-        {
+        <SimpleSlider />
+
+        { /* Dump sample-products.js data */
           Object
             .keys(this.state.product)
             .map(key => <Product key={key} details={this.state.product[key] }/>)
